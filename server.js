@@ -33,11 +33,11 @@ async function randomId() {
   return randomId
 }
 
-app.get("/test", (req, res) => {
+app.get("/name", (req, res) => {
   res.send("<h1>It's working 🤗</h1>")
 })
 
-app.get("/", async (req, res) => {
+app.get("/address", async (req, res) => {
   try {
     const id = await randomId()
     const character = await getCharacter(id)
